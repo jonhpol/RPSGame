@@ -2,4 +2,4 @@ os: osx
 language: objective-c
 osx_image: xcode11.2
 script:
-  - set -o pipefail && xcodebuild build -project RPSGame.xcodeproj -scheme RPSGame -sdk iphonesimulator13.0 -destination 'name=iPhone 6,OS=12.4' ONLY_ACTIVE_ARCH=NO | xcpretty
+  - xcodebuild -scheme RPSGame -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=13.0' build test
