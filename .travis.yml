@@ -1,0 +1,6 @@
+language: objective-objective
+osx_image: xcode11.2
+xcode_project: RPSGame.xcodeproj
+xcode_scheme RPSGame
+xcode_sdk: iphonesimulator13.0
+
