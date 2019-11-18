@@ -16,7 +16,18 @@
 		6C507D3C22CE31DF0039A777 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C507D3B22CE31DF0039A777 /* GameManager.swift */; };
 		6C507D3F22CE32040039A777 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C507D3E22CE32040039A777 /* VideoCapture.swift */; };
 		6C507D4122CE35860039A777 /* HandSigns.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6C507D4022CE35860039A777 /* HandSigns.mlmodel */; };
+		6CB01E302382362900B6BC75 /* RPSGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB01E2F2382362900B6BC75 /* RPSGameTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CB01E322382362900B6BC75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C507D1C22CE317B0039A777 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C507D2322CE317B0039A777;
+			remoteInfo = RPSGame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6C507D2422CE317B0039A777 /* RPSGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		6C507D3B22CE31DF0039A777 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		6C507D3E22CE32040039A777 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		6C507D4022CE35860039A777 /* HandSigns.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandSigns.mlmodel; sourceTree = "<group>"; };
+		6CB01E2D2382362900B6BC75 /* RPSGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB01E2F2382362900B6BC75 /* RPSGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSGameTests.swift; sourceTree = "<group>"; };
+		6CB01E312382362900B6BC75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6C507D2122CE317B0039A777 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB01E2A2382362900B6BC75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				6C507D2622CE317B0039A777 /* RPSGame */,
+				6CB01E2E2382362900B6BC75 /* RPSGameTests */,
 				6C507D2522CE317B0039A777 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				6C507D2422CE317B0039A777 /* RPSGame.app */,
+				6CB01E2D2382362900B6BC75 /* RPSGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +107,15 @@
 			path = CoreML;
 			sourceTree = "<group>";
 		};
+		6CB01E2E2382362900B6BC75 /* RPSGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CB01E2F2382362900B6BC75 /* RPSGameTests.swift */,
+				6CB01E312382362900B6BC75 /* Info.plist */,
+			);
+			path = RPSGameTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,18 +136,40 @@
 			productReference = 6C507D2422CE317B0039A777 /* RPSGame.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6CB01E2C2382362900B6BC75 /* RPSGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB01E342382362900B6BC75 /* Build configuration list for PBXNativeTarget "RPSGameTests" */;
+			buildPhases = (
+				6CB01E292382362900B6BC75 /* Sources */,
+				6CB01E2A2382362900B6BC75 /* Frameworks */,
+				6CB01E2B2382362900B6BC75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB01E332382362900B6BC75 /* PBXTargetDependency */,
+			);
+			name = RPSGameTests;
+			productName = RPSGameTests;
+			productReference = 6CB01E2D2382362900B6BC75 /* RPSGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6C507D1C22CE317B0039A777 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "João Paulo de Oliveira Sabino";
 				TargetAttributes = {
 					6C507D2322CE317B0039A777 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					6CB01E2C2382362900B6BC75 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 6C507D2322CE317B0039A777;
 					};
 				};
 			};
@@ -133,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				6C507D2322CE317B0039A777 /* RPSGame */,
+				6CB01E2C2382362900B6BC75 /* RPSGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +200,13 @@
 				6C507D3422CE31810039A777 /* LaunchScreen.storyboard in Resources */,
 				6C507D3122CE31810039A777 /* Assets.xcassets in Resources */,
 				6C507D2F22CE317B0039A777 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB01E2B2382362900B6BC75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +226,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CB01E292382362900B6BC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB01E302382362900B6BC75 /* RPSGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CB01E332382362900B6BC75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C507D2322CE317B0039A777 /* RPSGame */;
+			targetProxy = 6CB01E322382362900B6BC75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6C507D2D22CE317B0039A777 /* Main.storyboard */ = {
@@ -338,6 +416,48 @@
 			};
 			name = Release;
 		};
+		6CB01E352382362900B6BC75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9TV25TFN7;
+				INFOPLIST_FILE = RPSGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JP.RPSGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPSGame.app/RPSGame";
+			};
+			name = Debug;
+		};
+		6CB01E362382362900B6BC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9TV25TFN7;
+				INFOPLIST_FILE = RPSGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JP.RPSGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPSGame.app/RPSGame";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +475,15 @@
 			buildConfigurations = (
 				6C507D3922CE31810039A777 /* Debug */,
 				6C507D3A22CE31810039A777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB01E342382362900B6BC75 /* Build configuration list for PBXNativeTarget "RPSGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB01E352382362900B6BC75 /* Debug */,
+				6CB01E362382362900B6BC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
