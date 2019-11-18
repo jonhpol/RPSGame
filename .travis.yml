@@ -2,4 +2,4 @@ os: osx
 language: objective-c
 osx_image: xcode11.2
 script:
-  - xcodebuild -scheme RPSGame -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.0' build test
+  - xcodebuild -scheme RPSGame -sdk iphonesimulator13.0 -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.0' build test
