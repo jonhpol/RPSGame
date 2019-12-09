@@ -1,5 +1,7 @@
-os: osx
-language: objective-c
-osx_image: xcode11.2
+language:
+  - swift
+osx_image: xcode10.1
 script:
-  - xcodebuild -scheme RPSGame -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.2' build test
+  - xcodebuild -scheme RPSGame -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.1' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
