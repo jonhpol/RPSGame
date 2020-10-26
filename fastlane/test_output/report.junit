@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='RPSGameTests.xctest' tests='2' failures='0'>
+  <testsuite name='RPSGameTests.RPSGameTests' tests='2' failures='0'>
+    <testcase classname='RPSGameTests.RPSGameTests' name='testExample' time='0.002'/>
+    <testcase classname='RPSGameTests.RPSGameTests' name='testPerformanceExample' time='0.304'/>
+  </testsuite>
+</testsuites>
