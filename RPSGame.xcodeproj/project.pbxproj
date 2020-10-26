@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0162B6239ECE0000B518FA /* RPSGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0162B5239ECE0000B518FA /* RPSGameUITests.swift */; };
+		6C0162BE239ECE6E00B518FA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0162BD239ECE6E00B518FA /* SnapshotHelper.swift */; };
 		6C507D2822CE317B0039A777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C507D2722CE317B0039A777 /* AppDelegate.swift */; };
 		6C507D2A22CE317B0039A777 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C507D2922CE317B0039A777 /* SceneDelegate.swift */; };
 		6C507D2C22CE317B0039A777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C507D2B22CE317B0039A777 /* ViewController.swift */; };
@@ -20,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6C0162B8239ECE0000B518FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C507D1C22CE317B0039A777 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C507D2322CE317B0039A777;
+			remoteInfo = RPSGame;
+		};
 		6CB01E322382362900B6BC75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6C507D1C22CE317B0039A777 /* Project object */;
@@ -30,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C0162B3239ECE0000B518FA /* RPSGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0162B5239ECE0000B518FA /* RPSGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSGameUITests.swift; sourceTree = "<group>"; };
+		6C0162B7239ECE0000B518FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C0162BD239ECE6E00B518FA /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		6C507D2422CE317B0039A777 /* RPSGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C507D2722CE317B0039A777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C507D2922CE317B0039A777 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C0162B0239ECE0000B518FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C507D2122CE317B0039A777 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C0162B4239ECE0000B518FA /* RPSGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C0162BD239ECE6E00B518FA /* SnapshotHelper.swift */,
+				6C0162B5239ECE0000B518FA /* RPSGameUITests.swift */,
+				6C0162B7239ECE0000B518FA /* Info.plist */,
+			);
+			path = RPSGameUITests;
+			sourceTree = "<group>";
+		};
 		6C507D1B22CE317B0039A777 = {
 			isa = PBXGroup;
 			children = (
 				6C507D2622CE317B0039A777 /* RPSGame */,
 				6CB01E2E2382362900B6BC75 /* RPSGameTests */,
+				6C0162B4239ECE0000B518FA /* RPSGameUITests */,
 				6C507D2522CE317B0039A777 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +109,7 @@
 			children = (
 				6C507D2422CE317B0039A777 /* RPSGame.app */,
 				6CB01E2D2382362900B6BC75 /* RPSGameTests.xctest */,
+				6C0162B3239ECE0000B518FA /* RPSGameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +151,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C0162B2239ECE0000B518FA /* RPSGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C0162BA239ECE0000B518FA /* Build configuration list for PBXNativeTarget "RPSGameUITests" */;
+			buildPhases = (
+				6C0162AF239ECE0000B518FA /* Sources */,
+				6C0162B0239ECE0000B518FA /* Frameworks */,
+				6C0162B1239ECE0000B518FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C0162B9239ECE0000B518FA /* PBXTargetDependency */,
+			);
+			name = RPSGameUITests;
+			productName = RPSGameUITests;
+			productReference = 6C0162B3239ECE0000B518FA /* RPSGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		6C507D2322CE317B0039A777 /* RPSGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C507D3822CE31810039A777 /* Build configuration list for PBXNativeTarget "RPSGame" */;
@@ -164,11 +214,18 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "João Paulo de Oliveira Sabino";
 				TargetAttributes = {
+					6C0162B2239ECE0000B518FA = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Manual;
+						TestTargetID = 6C507D2322CE317B0039A777;
+					};
 					6C507D2322CE317B0039A777 = {
 						CreatedOnToolsVersion = 11.0;
+						ProvisioningStyle = Manual;
 					};
 					6CB01E2C2382362900B6BC75 = {
 						CreatedOnToolsVersion = 11.2;
+						ProvisioningStyle = Manual;
 						TestTargetID = 6C507D2322CE317B0039A777;
 					};
 				};
@@ -188,11 +245,19 @@
 			targets = (
 				6C507D2322CE317B0039A777 /* RPSGame */,
 				6CB01E2C2382362900B6BC75 /* RPSGameTests */,
+				6C0162B2239ECE0000B518FA /* RPSGameUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C0162B1239ECE0000B518FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C507D2222CE317B0039A777 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +278,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C0162AF239ECE0000B518FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0162B6239ECE0000B518FA /* RPSGameUITests.swift in Sources */,
+				6C0162BE239ECE6E00B518FA /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C507D2022CE317B0039A777 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +311,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6C0162B9239ECE0000B518FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C507D2322CE317B0039A777 /* RPSGame */;
+			targetProxy = 6C0162B8239ECE0000B518FA /* PBXContainerItemProxy */;
+		};
 		6CB01E332382362900B6BC75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6C507D2322CE317B0039A777 /* RPSGame */;
@@ -264,6 +343,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C0162BB239ECE0000B518FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V9TV25TFN7;
+				INFOPLIST_FILE = RPSGameUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JP.RPSGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPSGame;
+			};
+			name = Debug;
+		};
+		6C0162BC239ECE0000B518FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V9TV25TFN7;
+				INFOPLIST_FILE = RPSGameUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JP.RPSGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPSGame;
+			};
+			name = Release;
+		};
 		6C507D3622CE31810039A777 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -382,7 +501,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V9TV25TFN7;
 				INFOPLIST_FILE = RPSGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -392,6 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JP.RPSGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.JP.RPSGame";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -401,7 +522,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V9TV25TFN7;
 				INFOPLIST_FILE = RPSGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -411,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JP.RPSGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.JP.RPSGame";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -420,7 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V9TV25TFN7;
 				INFOPLIST_FILE = RPSGameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -441,7 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = V9TV25TFN7;
 				INFOPLIST_FILE = RPSGameTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -461,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C0162BA239ECE0000B518FA /* Build configuration list for PBXNativeTarget "RPSGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0162BB239ECE0000B518FA /* Debug */,
+				6C0162BC239ECE0000B518FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C507D1F22CE317B0039A777 /* Build configuration list for PBXProject "RPSGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

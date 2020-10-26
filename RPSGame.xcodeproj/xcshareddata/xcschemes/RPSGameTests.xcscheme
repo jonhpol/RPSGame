@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C507D2322CE317B0039A777"
-               BuildableName = "RPSGame.app"
-               BlueprintName = "RPSGame"
+               BlueprintIdentifier = "6CB01E2C2382362900B6BC75"
+               BuildableName = "RPSGameTests.xctest"
+               BlueprintName = "RPSGameTests"
                ReferencedContainer = "container:RPSGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,16 +60,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C507D2322CE317B0039A777"
-            BuildableName = "RPSGame.app"
-            BlueprintName = "RPSGame"
-            ReferencedContainer = "container:RPSGame.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -77,16 +67,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C507D2322CE317B0039A777"
-            BuildableName = "RPSGame.app"
-            BlueprintName = "RPSGame"
+            BlueprintIdentifier = "6CB01E2C2382362900B6BC75"
+            BuildableName = "RPSGameTests.xctest"
+            BlueprintName = "RPSGameTests"
             ReferencedContainer = "container:RPSGame.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
